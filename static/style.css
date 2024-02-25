@@ -56,7 +56,8 @@ h2 {
   text-align: center;
   opacity: 90%; /* Slightly transparent footer */
   width: auto;
-  position: fixed;}
+  margin-top: 10cm;
+}
 
 /* Responsive layout adjustments */
 @media (max-width: 600px) {
