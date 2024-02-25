@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin Tracker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> <!-- Ensure correct path -->
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <h1>Crypto Tracker</h1>
+    </div>
+    
+    <div class="row"> <!-- Container for flexboxes -->
+        <!-- Tracker 1 -->
+        <!-- Tracker Template -->
+        <div class="column">
+            <h2>Tracker</h2>
+            <input type="text" class="symbolInput" placeholder="Enter symbol (e.g., btc)">
+            <select class="currencySelect">
+                <option value="EUR">Yourop</option>
+                <option value="USDT" selected>Murica</option>
+            </select>
+            <select class="intervalSelect">
+                <option value="1h">1 hour</option>
+                <option value="12h" selected>12 hours</option>
+                <option value="1d">1 day</option>
+                <option value="1w">1 week</option>
+
+            </select>
+            <input type="number" class="limitInput" placeholder="Enter limit" value="5">
+            <button class="getChartButton">Get Chart</button>
+            <img class="chartImage" src="" alt="Tracker Chart">
+        </div>
+
+        
+        <!-- Tracker 2 -->
+        <div class="column">
+            <h2>Tracker</h2>
+            <input type="text" class="symbolInput" placeholder="Enter symbol (e.g., eth)">
+            <select class="currencySelect">
+                <option value="EUR">Yourop</option>
+                <option value="USDT" selected>Murica</option>
+            </select>
+            <select class="intervalSelect">
+                <option value="1h">1 hour</option>
+                <option value="12h" selected>12 hours</option>
+                <option value="1d">1 day</option>
+            </select>
+            <input type="number" class="limitInput" placeholder="Enter limit" value="20">
+            <button class="getChartButton">Get Chart</button>
+            <img class="chartImage" src="" alt="Tracker Chart">
+        </div>
+
+        <!-- Add more trackers here by replicating the .column structure -->
+    </div>
+
+    <div class="row"> <!-- Container for flexboxes -->
+        <div class="column">
+            <h2>Tracker</h2>
+            <input type="text" class="symbolInput" placeholder="Enter symbol (e.g., btc)">
+            <select class="currencySelect">
+                <option value="EUR">Yourop</option>
+                <option value="USDT" selected>Murica</option>
+            </select>
+            <select class="intervalSelect">
+                <option value="1h">1 hour</option>
+                <option value="12h" selected>12 hours</option>
+                <option value="1d">1 day</option>
+                <option value="1w">1 week</option>
+            </select>
+            <input type="number" class="limitInput" placeholder="Enter limit" value="5">
+            <button class="getChartButton">Get Chart</button>
+            <img class="chartImage" src="" alt="Tracker Chart">
+            
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>Footer</p>
+    </div>
+    
+    <script src="{{ url_for('static', filename='serve.js') }}"></script> <!-- Ensure correct path -->
+    
+</body>
+</html>

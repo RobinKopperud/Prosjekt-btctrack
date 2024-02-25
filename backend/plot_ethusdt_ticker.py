@@ -1,0 +1,1 @@
+#Modell som kan hente btc/eth etc fra public api
